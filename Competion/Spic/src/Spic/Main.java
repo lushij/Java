@@ -2,6 +2,7 @@ package Spic;
 
 import java.util.*;//直接全导入
 //import java.util.Scanner;
+
 public class Main {
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
