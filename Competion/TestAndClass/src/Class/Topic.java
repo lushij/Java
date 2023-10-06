@@ -61,4 +61,28 @@ public class Topic {
 		
 	}
 
+	public String topic3(String num,String addr) {
+		if(num.length()!=11) {
+			return "手机号不符合要求";
+		}
+		if(!addr.matches("[A-Za-z0-9]{1,10}")) {
+			//matches("[A-Za-z0-9]{1,10}")是一个正则表达式，用于验证字符串是否满足特定的模式。
+			//在这个正则表达式中，[A-Za-z0-9]表示可以是任意字母（大小写不限）或数字。{1,10}表示前面的字符可以重复出现1到10次，即字符串长度在1到10之间。
+			return "地址不符合要求";
+		}
+		return "OK";
+	}
+
+
+	public String topic4(String str) {
+		if(str.startsWith("ab")) {
+			String replace=str.replace("ab", "ef");
+			return "替换前缀后的字符串为："+replace;
+		}
+		if(str.endsWith("cd") && !str.startsWith("ab")){
+			String replace=str.replaceAll("cd", "gh");//替换所有
+			return "替换cd后的字符串为："+replace;
+		}
+		return "大写字母的字符串为："+str.toUpperCase();
+		
 }
