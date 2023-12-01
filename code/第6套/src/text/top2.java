@@ -1,7 +1,6 @@
 package text;
-
 public class top2 {
-	public String top(int a,int b,int c) {
+	public String top(int a,int b,int c) {//主方法
 		if(!a(a) || !b(b) || !c(c))
 		{
 			return "输入边值不在范围内";
@@ -19,10 +18,10 @@ public class top2 {
 			}
 		}
 	}
-	public boolean a(int a) {
+	public boolean a(int a) {//判断
 		return a<=10&&a>=1;
 	}
-	public boolean b(int b) {
+	public boolean b(int b) {//判断
 		return b<=10&&b>=1;
 	}
 	public boolean c(int c) {
